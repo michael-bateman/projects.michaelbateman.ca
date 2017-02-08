@@ -1,0 +1,89 @@
+---
+layout: default
+title: Home
+---
+
+<div style="text-align: center;">
+  <h1>Michael's Project Website</h1>
+  <p>
+    <i>
+      This website contains Michael's computer projects that are current and from the past
+    </i>
+  </p>
+  <br />
+  <div class="card-columns">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">About Michael</h3>
+        <p class="card-text">I like computer science, rowing, music, blogging and so much more!  If I am not playing the trombone or rowing, I am trying to make a new project for computers.</p>
+        <div>
+          <a href="#" class="btn btn-primary">Learn More</a>
+          <a href="https://blog.michaelbateman.ca" class="btn btn-primary">Blog</a>
+          <a href="https://michaelbateman.ca" class="btn btn-primary">Website &raquo;</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Languages</h3>
+        <p class="card-text">
+          <li>
+            HTML
+          </li>
+          <li>
+            CSS
+          </li>
+          <li>
+            Python
+          </li>
+          <li>
+            JavaScript
+          </li>
+          <li>
+            Java
+          </li>
+          <li>
+            AppleScript
+          </li>
+          <li>
+            Command Line (Unix/Linux)
+          </li>
+          <li>
+            And a couple others...
+          </li>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h2 class="card-title">Projects</h2>
+      <p class="card-text">
+        Click to learn more!
+      </p>
+      <div id="accordion" role="tablist" aria-multiselectable="true" style="text-align: left;">
+        {% for item in site.data.projects %}
+          <div class="card">
+            <div class="card-header" role="tab" id="heading{{ item[1].name | replace: ' ',''}}">
+              <h5 class="mb-0" style="text-align: left;">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ item[1].name | replace: ' ',''}}" aria-expanded="false" aria-controls="collapse{{ item[1].name | replace: ' ',''}}">
+                  {{ item[1].name }}
+                </a>
+              </h5>
+            </div>
+            <div id="collapse{{ item[1].name | replace: ' ',''}}" class="collapse" role="tabpanel" aria-labelledby="heading{{ item[1].name | replace: ' ',''}}">
+              <div class="card-block" style="color: #000">
+                {{ item[1].description }}
+                <div style="padding-top: 15px;">
+                  {% if item[1].website %}<a href="{{ item[1].website }}" class="btn btn-primary">Website</a>{% endif %}
+                  {% if item[1].github %}<a href="https://github.com/{% if item[1].github_username %}{{ item[1].github_username }}{% else %}michael-bateman{% endif %}/{{ item[1].github }}" class="btn btn-primary">GitHub Repository</a>{% endif %}
+                  {% if item[1].link %}<a href="http://projects.michaelbateman.ca/{{ item[1].link }}" class="btn btn-primary">Learn More &raquo;</a>{% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

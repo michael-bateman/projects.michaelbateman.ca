@@ -1,0 +1,58 @@
+# Projects file
+# The following data can be entered:
+#   name (name)
+#   description (description)
+#   website of project (website)
+#   github repository name (github)
+#       github repository owner (github_username)
+#   projects link (link)
+
+personal-website:
+  name: Personal website
+  description: My personal website
+  website: http://michaelbateman.ca
+  github: michaelbateman.ca
+
+beta-website:
+  name: Beta personal website
+  description: Beta personal website
+  website: http://beta.michaelbateman.ca
+  github: beta.michaelbateman.ca
+
+blog:
+  name: Blog
+  description: My blog where you can find my ranting, and views on current issues
+  website: http://blog.michaelbateman.ca
+  github: blog
+
+ewb-website:
+  name: Engineering Society website
+  description: The website for the Upper Canada College Engineering Society
+  website: http://uccewb.github.io
+  github_username: uccewb
+  github: uccewb.github.io
+
+projects-website:
+  name: Projects website
+  description: A website for projects where you can find all of my documentation of projects.
+  github: projects.michaelbateman.ca
+
+staticsite-password:
+  name: Static site password protected
+  description: A very cool project that allows you to put a password on your static site.
+  github: password-protected-site
+
+about-me-quiz:
+  name: Python about me quiz
+  description: A quiz all about me written in Python.
+  github: about-michael-quiz
+
+pong:
+  name: Pong
+  description: A game we modified in grade 9 computer science class
+  github: pong-python
+
+login-cookie:
+  name: Cookie validation
+  description: Makes a user get a cookie on their computer, and then allows them to open a page.
+  github: login-cookie
