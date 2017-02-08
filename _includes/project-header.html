@@ -1,0 +1,28 @@
+{% assign project = site.data.projects[page.project] %}
+<div class="container">
+	<a href="{{ site.baseurl }}/" style="color: inherit;">
+		<span class="fa fa-home fa-3x"></span>
+	</a>
+	<h1 class="h1-center">{{ project.name }}{% if project.status %} | <img src="https://travis-ci.org/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}.svg?branch=master">{% endif %}</h1>
+	<br />
+	{% if project.website or project.github %}
+		<div class="card">
+			<div class="card-block">
+				<h2 class="card-title">Project Links</h2>
+				<p class="card-text">
+					{% if project.website %}
+						<a href="{{ project.website }}" style="color: inherit;">
+							<span class="fa fa-link fa-3x"></span>
+						</a>
+					{% endif %}
+					{% if project.github %}
+						<a href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}" style="color: inherit;padding-left: 30px;">
+							<span class="fa fa-github fa-3x"></span>
+						</a>
+					{% endif %}
+				</p>
+			</div>
+		</div>
+		<br />
+	{% endif %}
+</div>

@@ -10,3 +10,6 @@ hr {
 .card-columns {
 	column-count: 2;
 }
+.h1-center {
+	text-align: center;
+}

@@ -77,7 +77,7 @@ title: Home
                 <div style="padding-top: 15px;">
                   {% if item[1].website %}<a href="{{ item[1].website }}" class="btn btn-primary">Website</a>{% endif %}
                   {% if item[1].github %}<a href="https://github.com/{% if item[1].github_username %}{{ item[1].github_username }}{% else %}michael-bateman{% endif %}/{{ item[1].github }}" class="btn btn-primary">GitHub Repository</a>{% endif %}
-                  {% if item[1].link %}<a href="http://projects.michaelbateman.ca/{{ item[1].link }}" class="btn btn-primary">Learn More &raquo;</a>{% endif %}
+                  {% if item[1].link %}<a href="{{ site.baseurl }}/{{ item[1].link }}/" class="btn btn-primary">Learn More &raquo;</a>{% endif %}
                 </div>
               </div>
             </div>

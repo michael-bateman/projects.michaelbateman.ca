@@ -6,12 +6,15 @@
 #   github repository name (github)
 #       github repository owner (github_username)
 #   projects link (link)
+#   status (status)[bool][only True is accepted, if false, leave blank]
 
-personal-website:
+
+michaelbateman.ca:
   name: Personal website
   description: My personal website
   website: http://michaelbateman.ca
   github: michaelbateman.ca
+  link: personal-website
 
 beta-website:
   name: Beta personal website
@@ -25,32 +28,37 @@ blog:
   website: http://blog.michaelbateman.ca
   github: blog
 
-ewb-website:
+uccewb.github.io:
   name: Engineering Society website
   description: The website for the Upper Canada College Engineering Society
   website: http://uccewb.github.io
-  github_username: uccewb
+  github_username: UCCEWB
   github: uccewb.github.io
+
+pong:
+  name: Pong
+  description: A game we modified in grade 9 computer science class
+  github: pong-python
 
 projects-website:
   name: Projects website
   description: A website for projects where you can find all of my documentation of projects.
   github: projects.michaelbateman.ca
 
-staticsite-password:
-  name: Static site password protected
-  description: A very cool project that allows you to put a password on your static site.
-  github: password-protected-site
-
 about-me-quiz:
   name: Python about me quiz
   description: A quiz all about me written in Python.
   github: about-michael-quiz
 
-pong:
-  name: Pong
-  description: A game we modified in grade 9 computer science class
-  github: pong-python
+money-counter:
+  name: AppleScript money counter
+  description: An AppleScript application that asks you the quantity of bills/coins, then counts them and tells you the total value.
+  github: money-counter
+
+staticsite-password:
+  name: Static site password protected
+  description: A very cool project that allows you to put a password on your static site.
+  github: password-protected-site
 
 login-cookie:
   name: Cookie validation

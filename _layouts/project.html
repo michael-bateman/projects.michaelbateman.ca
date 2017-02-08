@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	{% include head.html %}
+
+  <body>
+
+  	{% include header.html %}
+
+  	{% include project-header.html %}
+  	
+	  	<div class="container">
+	  		<div class="card">
+					<div class="card-block">
+						<h2 class="card-title">About</h2>
+						<p class="card-text">
+							{{ content }}
+						</p>
+					</div>
+				</div>
+  		</div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
