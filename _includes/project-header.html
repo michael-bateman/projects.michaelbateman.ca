@@ -11,12 +11,12 @@
 				<h2 class="card-title">Project Links</h2>
 				<p class="card-text">
 					{% if project.website %}
-						<a href="{{ project.website }}" style="color: inherit;">
+						<a href="{{ project.website }}" style="color: inherit;padding-right: 30px;">
 							<span class="fa fa-link fa-3x"></span>
 						</a>
 					{% endif %}
 					{% if project.github %}
-						<a href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}" style="color: inherit;padding-left: 30px;">
+						<a href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}" style="color: inherit;">
 							<span class="fa fa-github fa-3x"></span>
 						</a>
 					{% endif %}
