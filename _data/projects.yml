@@ -45,6 +45,12 @@ projects-website:
   description: A website for projects where you can find all of my documentation of projects.
   github: projects.michaelbateman.ca
 
+password-generator:
+  name: Password Generator
+  description: A simple script to generate random passwords of your choice.
+  github: password-generator
+  link: password-generator
+
 about-me-quiz:
   name: Python about me quiz
   description: A quiz all about me written in Python.
