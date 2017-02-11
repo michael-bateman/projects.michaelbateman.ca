@@ -11,15 +11,35 @@
 				<h2 class="card-title">Project Links</h2>
 				<p class="card-text">
 					{% if project.website %}
-						<a href="{{ project.website }}" style="color: inherit;padding-right: 30px;">
+						<a href="{{ project.website }}" style="color: inherit;padding-right: 50px;">
 							<span class="fa fa-link fa-3x"></span>
 						</a>
 					{% endif %}
 					{% if project.github %}
-						<a href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}" style="color: inherit;">
+						<a href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}" style="color: inherit;padding-right: 50px;">
 							<span class="fa fa-github fa-3x"></span>
 						</a>
+						<a href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}/archive/master.zip" style="color: inherit;">
+							<span class="fa fa-download fa-3x"></span>
+						</a>
 					{% endif %}
+				</p>
+			</div>
+		</div>
+		<br />
+	{% endif %}
+	{% if project.github %}
+		<div class="card">
+			<div class="card-block">
+				<h2 class="card-title">GitHub Links</h2>
+				<p class="card-text">
+					<div>
+						<a class="github-button" href="https://github.com/michael-bateman" data-style="mega" aria-label="Follow @michael-bateman on GitHub">Follow @michael-bateman</a>
+						<a class="github-button" href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}" data-icon="octicon-star" data-style="mega" aria-label="Star {% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }} on GitHub">Star</a>
+						<a class="github-button" href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}/fork" data-icon="octicon-repo-forked" data-style="mega" aria-label="Fork {% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }} on GitHub">Fork</a>
+						<a class="github-button" href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}/subscription" data-icon="octicon-eye" data-style="mega" aria-label="Watch {% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }} on GitHub">Watch</a>
+						<a class="github-button" href="https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}/issues" data-icon="octicon-issue-opened" data-style="mega" aria-label="Issue {% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }} on GitHub">Issue</a>
+					</div>
 				</p>
 			</div>
 		</div>
