@@ -1,3 +1,11 @@
+/* Fonts */
+@font-face {
+	font-family: Ubuntu;
+	src:url(../fonts/ubuntu.ttf);
+}
+
+/* Main CSS */
+
 /* Add back when remove header
 body {
 	padding-top: 50px;
@@ -6,6 +14,7 @@ body {
 /* This is when there is a notice in the header */
 body {
 	padding-top: 20px;
+	font-family: 'Ubuntu', sans-serif;
 }
 footer {
 	padding-bottom: 50px;
