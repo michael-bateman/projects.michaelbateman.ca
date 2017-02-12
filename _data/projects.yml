@@ -16,55 +16,73 @@ michaelbateman.ca:
   github: michaelbateman.ca
   link: personal-website
 
-beta-website:
+beta.michaelbateman.ca:
   name: Beta personal website
-  description: Beta personal website
+  description: This is the same as my personal website except it has new features.
   website: http://beta.michaelbateman.ca
   github: beta.michaelbateman.ca
+  link: beta-website
 
-blog:
+blog.michaelbateman.ca:
   name: Blog
-  description: My blog where you can find my ranting, and views on current issues
+  description: My blog where you can find my ranting, and views on current issues that are happening around the world.
   website: http://blog.michaelbateman.ca
-  github: blog
+  github: blog.michaelbateman.ca
+  link: blog
+  status: True
 
 uccewb.github.io:
   name: Engineering Society website
-  description: The website for the Upper Canada College Engineering Society
+  description: The website for the Upper Canada College Engineering Society club.
   website: http://uccewb.github.io
   github_username: UCCEWB
   github: uccewb.github.io
 
 pong:
   name: Pong
-  description: A game we modified in grade 9 computer science class
+  description: A game I modified in my grade 9 computer science class.  This version of Pong was written in Python.
   github: pong-python
 
-projects-website:
+projects.michaelbateman.ca:
   name: Projects website
-  description: A website for projects where you can find all of my documentation of projects.
+  description: A website for projects where you can find all of the documentation for my projects.
   github: projects.michaelbateman.ca
 
 password-generator:
-  name: Password Generator
+  name: Password generator
   description: A simple script to generate random passwords of your choice.
   github: password-generator
   link: password-generator
 
-about-me-quiz:
-  name: Python about me quiz
-  description: A quiz all about me written in Python.
+about-michael-quiz:
+  name: About me - quiz
+  description: A quiz that tests you on how well you know me.
   github: about-michael-quiz
 
 money-counter:
-  name: AppleScript money counter
+  name: Money counter
   description: An AppleScript application that asks you the quantity of bills/coins, then counts them and tells you the total value.
   github: money-counter
 
-staticsite-password:
-  name: Static site password protected
-  description: A very cool project that allows you to put a password on your static site.
+password-protected-site:
+  name: Password for static site
+  description: A very cool project written in JavaScript that allows you to put a password on your static site.
   github: password-protected-site
+
+internet-online-checker:
+  name: Internt Online Checker
+  description: A program written in AppleScript that will alert you if your computer becomes disconnected from online.
+  github: internet-online-checker
+
+countdown:
+  name: Countdown
+  description: A simple countdown that I made in JavaScript for a webpage.
+  github: countdown
+
+python-turtleart:
+  name: Turtle Art
+  description: Python based Turtle Art that was one of my first projects in Python.
+  github: python-turtleart
 
 login-cookie:
   name: Cookie validation
