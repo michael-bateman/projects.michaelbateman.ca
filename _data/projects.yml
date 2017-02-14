@@ -37,6 +37,8 @@ uccewb.github.io:
   website: http://uccewb.github.io
   github_username: UCCEWB
   github: uccewb.github.io
+  link: engineering-society-website
+  status: True
 
 pong:
   name: Pong
@@ -70,7 +72,7 @@ password-protected-site:
   github: password-protected-site
 
 internet-online-checker:
-  name: Internt Online Checker
+  name: Internet Online Checker
   description: A program written in AppleScript that will alert you if your computer becomes disconnected from online.
   github: internet-online-checker
 
