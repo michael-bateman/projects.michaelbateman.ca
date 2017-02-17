@@ -7,6 +7,7 @@
 #       github repository owner (github_username)
 #   projects link (link)
 #   status (status)[bool][only True is accepted, if false, leave blank]
+#   ruby (ruby)[bool][only True is accepted, if false, leave blank]
 
 
 michaelbateman.ca:
@@ -43,11 +44,17 @@ pong:
   name: Pong
   description: A game I modified in my grade 9 computer science class.  This version of Pong was written in Python.
   github: pong-python
+  link: pong
 
 projects.michaelbateman.ca:
   name: Projects website
   description: A website for projects where you can find all of the documentation for my projects.
   github: projects.michaelbateman.ca
+
+python-codingbat:
+  name: Python Coding Bat
+  description: Solutions to some problems of Python Coding Bat
+  github: python-codingbat
 
 password-generator:
   name: Password generator
