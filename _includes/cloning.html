@@ -1,0 +1,58 @@
+<div class="container">
+	<div class="card">
+    <div class="card-block">
+      <h2 class="card-title">Development Guide</h2>
+      <p class="card-text">If you want to clone the repository, please follow these instructions exactly.
+      	<br /><br />
+      	You will need the following to run this project:
+      	<li>
+      		Git
+      	</li>
+      	{% if project.ruby %}
+      		<li>
+      			Ruby
+      		</li>
+      		<li>
+      			Jekyll
+      		</li>
+      	{% endif %}
+      	<br />
+      	Most modern computers come with Git installed.  If you do not have it installed, you can download it at <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.
+      	<br /><br />
+      	{% if project.ruby %}
+      		You will also need to download Ruby.  Most modern Mac's come with Ruby pre-installed but if you do not have it, you can download it at <a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a>.
+      		<br /><br />
+      		Installing Jekyll is very simple.  To do that, you need to open a command prompt and type the following.
+      		<br />
+      		<b>Note</b> - to be able to install Jekyll you must have already installed Ruby.  Also, do not type the <code style="color: black">$</code> as it is a reminder that it is a command, to be entered on the command line.
+      		<br /><br />
+      	{% endif %}
+    		To clone the repository, type in the following:
+    		<br /><br />
+    		<code style="color: black">
+    			$ git clone https://github.com/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}
+    		</code>
+    		<br /><br />
+    		{% if project.ruby %}
+	    		Now, navigate to the directory by typing:
+	    		<br /><br />
+	    		<code style="color: black">
+	    			$ cd {{ project.github }}
+	    		</code>
+	    		<br /><br />
+	    		Now, you need to serve Jekyll to start the server:
+	    		<br /><br />
+	    		<code style="color: black">
+	    			$ jekyll serve
+	    		</code>
+	    		<br /><br />
+	    		<b>Note:</b> If you would like to serve the port on a different one than port <code style="color: black">4000</code> type the following:
+	    		<br /><br />
+	    		<code style="color: black">
+	    			$ jekyll serve --port &lt;port_no&gt;
+	    		</code>
+	    	{% endif %}
+	    </p>
+    </div>
+  </div>
+</div>
