@@ -6,8 +6,8 @@
 #   github repository name (github)
 #       github repository owner (github_username)
 #   projects link (link)
-#   status (status)[bool][only True is accepted, if false, leave blank]
-#   ruby (ruby)[bool][only True is accepted, if false, leave blank]
+#   status (status)[bool]
+#   ruby (ruby)[bool]
 
 
 michaelbateman.ca:
@@ -16,6 +16,8 @@ michaelbateman.ca:
   website: http://michaelbateman.ca
   github: michaelbateman.ca
   link: personal-website
+  status: False
+  ruby: False
 
 beta.michaelbateman.ca:
   name: Beta personal website
@@ -23,6 +25,8 @@ beta.michaelbateman.ca:
   website: http://beta.michaelbateman.ca
   github: beta.michaelbateman.ca
   link: beta-website
+  status: False
+  ruby: False
 
 blog.michaelbateman.ca:
   name: Blog
@@ -40,17 +44,25 @@ uccewb.github.io:
   github_username: UCCEWB
   github: uccewb.github.io
   link: engineering-society-website
+  status: False
+  ruby: False
 
 pong:
   name: Pong
   description: A game I modified in my grade 9 computer science class.  This version of Pong was written in Python.
   github: pong-python
   link: pong
+  status: False
+  ruby: False
 
 projects.michaelbateman.ca:
   name: Projects website
   description: A website for projects where you can find all of the documentation for my projects.
+  website: https://projects.michaelbateman.ca
   github: projects.michaelbateman.ca
+  link: projects-website
+  status: False
+  ruby: True
 
 python-codingbat:
   name: Python Coding Bat
