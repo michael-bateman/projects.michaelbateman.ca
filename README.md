@@ -1,5 +1,5 @@
 # Project Site | [https://projects.michaelbateman.ca](https://projects.michaelbateman.ca)
-[![Build Status](https://travis-ci.org/michael-bateman/projects.michaelbateman.ca.svg?branch=master)](https://travis-ci.org/michael-bateman/projects.michaelbateman.ca) [![Version](https://img.shields.io/github/release/<github_username>/<repository_name>.svg)](https://github.com/michael-bateman/projects.michaelbateman.ca/releases)
+[![Build Status](https://travis-ci.org/michael-bateman/projects.michaelbateman.ca.svg?branch=master)](https://travis-ci.org/michael-bateman/projects.michaelbateman.ca) [![Version](https://img.shields.io/github/release/michael-bateman/projects.michaelbateman.ca.svg)](https://github.com/michael-bateman/projects.michaelbateman.ca/releases)
 
 *For more information, visit my projects website at https://projects.michaelbateman.ca/projects-website/*
 
