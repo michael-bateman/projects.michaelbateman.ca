@@ -61,7 +61,7 @@ projects.michaelbateman.ca:
   website: https://projects.michaelbateman.ca
   github: projects.michaelbateman.ca
   link: projects-website
-  status: False
+  status: True
   ruby: True
 
 python-codingbat:
