@@ -1,4 +1,4 @@
-# Project Site | [projects.michaelbateman.ca](https://projects.michaelbateman.ca)
+# Project Site | [https://projects.michaelbateman.ca](https://projects.michaelbateman.ca)
 [![Build Status](https://travis-ci.org/michael-bateman/projects.michaelbateman.ca.svg?branch=master)](https://travis-ci.org/michael-bateman/projects.michaelbateman.ca) [![Version](https://img.shields.io/github/release/<github_username>/<repository_name>.svg)](https://github.com/michael-bateman/projects.michaelbateman.ca/releases)
 
 *For more information, visit my projects website at https://projects.michaelbateman.ca/projects-website/*
@@ -15,7 +15,7 @@ __Note:__ *This guide assumes your on a Unix machine*
 
 ### Prerequisites
 
-To run our website you will need the following things:
+To run my website you will need the following things:
 
 1. [Git](https://git-scm.com)
 2. [Ruby](https://rubygems.org)
