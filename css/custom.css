@@ -6,12 +6,6 @@
 
 /* Main CSS */
 
-/* Add back when remove header
-body {
-	padding-top: 50px;
-}
-*/
-/* This is when there is a notice in the header */
 body {
 	padding-top: 20px;
 	font-family: 'Ubuntu', sans-serif;
