@@ -10,3 +10,6 @@ github: "https://github.com/michael-bateman/projects.michaelbateman.ca"
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
