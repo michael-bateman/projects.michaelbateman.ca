@@ -3,7 +3,7 @@ title: Michael's Projects
 email: info@michaelbateman.ca
 description: > # Michael Bateman's project website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://projects.michaelbateman.ca" # the base hostname & protocol for your site
+url: "http://projects.michaelbateman.ca" # the base hostname & protocol for your site
 
 # Social accounts
 github: "https://github.com/michael-bateman/projects.michaelbateman.ca"
