@@ -109,7 +109,7 @@ $ sudo jekyll serve --port 80
 
 * __Michael Bateman__ - [GitHub](https://github.com/michael-bateman/)
 
-See the list of [contributors](https://github.com/UCCEWB/uccewb.github.io/contributors) who helped in this project.
+See the list of [contributors](https://github.com/michael-bateman/projects.michaelbateman.ca/contributors) who helped in this project.
 
 ## License
 
