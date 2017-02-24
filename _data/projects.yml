@@ -68,6 +68,9 @@ python-codingbat:
   name: Python Coding Bat
   description: Solutions to some problems of Python Coding Bat
   github: python-codingbat
+  link: python-coding-bat
+  status: False
+  ruby: False
 
 password-generator:
   name: Password generator
