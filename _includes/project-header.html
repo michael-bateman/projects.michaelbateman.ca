@@ -27,6 +27,41 @@
 		</div>
 		<br />
 	{% endif %}
+	{% if page.url == '/personal-website/' %}
+		{% if project.languages.html or project.ruby or project.languages.css or project.languages.javascript or project.languages.python or project.languages.applescript or project.languages.apache %}
+			<div class="card">
+				<div class="card-block">
+					<h2 class="card-title">Project Language Badges</h2>
+					<p class="card-text">
+						The following badges are languages that are used in this project.  You can find out more about these languages if you go to the GitHub repository.
+						<br /><br />
+						{% if project.languages.html %}
+							<img src="https://img.shields.io/badge/Language-HTML-e44b23.svg" style="padding-right: 15px;">
+						{% endif %}
+						{% if project.ruby %}
+							<img src="https://img.shields.io/badge/Language-Ruby-701516.svg" style="padding-right: 15px;">
+						{% endif %}
+						{% if project.languages.css %}
+							<img src="https://img.shields.io/badge/Language-CSS-563d7c.svg" style="padding-right: 15px;">
+						{% endif %}
+						{% if project.languages.javascript %}
+							<img src="https://img.shields.io/badge/Language-JavaScript-f1e05a.svg" style="padding-right: 15px;">
+						{% endif %}
+						{% if project.languages.python %}
+							<img src="https://img.shields.io/badge/Language-Python-3572A5.svg" style="padding-right: 15px;">
+						{% endif %}
+						{% if project.languages.applescript %}
+							<img src="https://img.shields.io/badge/Language-AppleScript-101F1F.svg" style="padding-right: 15px;">
+						{% endif %}
+						{% if project.languages.apache %}
+							<img src="https://img.shields.io/badge/Language-ApacheConf-lightgrey.svg" style="padding-right: 15px;">
+						{% endif %}
+					</p>
+				</div>
+			</div>
+			<br />
+		{% endif %}
+	{% endif %}
 	<!--
 	{% if project.github %}
 		<div class="card">
