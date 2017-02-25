@@ -8,6 +8,13 @@
 #   projects link (link)
 #   status (status)[bool]
 #   ruby (ruby)[bool]
+#   languages:
+#     html
+#     css
+#     javascript
+#     python
+#     applescript
+#     apache
 
 
 michaelbateman.ca:
@@ -17,7 +24,13 @@ michaelbateman.ca:
   github: michaelbateman.ca
   link: personal-website
   status: False
-  ruby: False
+  ruby: True
+  languages:
+    html: True
+    css: True
+    javascript: True
+    apache: True
+
 
 beta.michaelbateman.ca:
   name: Beta personal website
