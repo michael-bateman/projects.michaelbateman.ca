@@ -11,5 +11,11 @@ title: Error 404 (Page Not Found)
   <p>Learn more about 404's on <a href="https://en.wikipedia.org/wiki/HTTP_404" style="color:inherit;"><span class="fa fa-wikipedia-w fa-lg"></span></a></p>
   <div style="padding-top: 20px">
     <a href="{{ site.baseurl }}/" class="btn btn-primary">Go Home</a>
+    <a href="javascript:goBack()" class="btn btn-secondary">Go Back</a>
   </div>
 </div>
+<script>
+	function goBack() {
+    	window.history.back();
+	}
+</script>
