@@ -7,6 +7,8 @@
 
 This website has all of Michael's computer science projects.
 
+__Note:__ *According to the linguist language filters, it shows that most of my project was written in HTML.  However, this is incorrect, so you might notice the `.gitattributes` file.  That file changes the filter to show Ruby instead.*
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
