@@ -30,6 +30,7 @@ michaelbateman.ca:
     css: True
     javascript: True
     apache: True
+  license: gpl
 
 
 beta.michaelbateman.ca:
