@@ -16,6 +16,9 @@ footer {
 hr {
 	height: 50px;
 }
+code {
+	color: black;
+}
 .card-columns {
 	column-count: 2;
 }
