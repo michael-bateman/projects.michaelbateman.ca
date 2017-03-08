@@ -2,7 +2,7 @@
 	<a href="{{ site.baseurl }}/" style="color: inherit;">
 		<span class="fa fa-home fa-3x"></span>
 	</a>
-	<h1 class="h1-center">{{ project.name }}{% if project.status %} | <img src="https://travis-ci.org/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}.svg?branch=master">{% endif %}</h1>
+	<h1 class="h1-center">{{ project.name }}</h1>
 	<br />
 	{% if project.website or project.github %}
 		<div class="card">
@@ -27,48 +27,48 @@
 		</div>
 		<br />
 	{% endif %}
-	{% if page.url == '/personal-website/' %}
-		{% if project.languages.html or project.ruby or project.languages.css or project.languages.javascript or project.languages.python or project.languages.applescript or project.languages.apache %}
-			<div class="card">
-				<div class="card-block">
-					<h2 class="card-title">Badges</h2>
-					<p class="card-text">
-						{% if project.languages.html %}
-							<img src="https://img.shields.io/badge/Language-HTML-e44b23.svg">
-						{% endif %}
-						{% if project.ruby %}
-							<img src="https://img.shields.io/badge/Language-Ruby-701516.svg">
-						{% endif %}
-						{% if project.languages.css %}
-							<img src="https://img.shields.io/badge/Language-CSS-563d7c.svg">
-						{% endif %}
-						{% if project.languages.javascript %}
-							<img src="https://img.shields.io/badge/Language-JavaScript-f1e05a.svg">
-						{% endif %}
-						{% if project.languages.python %}
-							<img src="https://img.shields.io/badge/Language-Python-3572A5.svg">
-						{% endif %}
-						{% if project.languages.applescript %}
-							<img src="https://img.shields.io/badge/Language-AppleScript-101F1F.svg">
-						{% endif %}
-						{% if project.languages.apache %}
-							<img src="https://img.shields.io/badge/Language-ApacheConf-lightgrey.svg">
-						{% endif %}
-						{% if project.license == "mit" %}
-							<img src="https://img.shields.io/badge/License-MIT-blue.svg">
-						{% endif %}
-						{% if project.license == "apache" %}
-							<img src="https://img.shields.io/badge/License-Apache-blue.svg">
-						{% endif %}
-						{% if project.license == "gpl" %}
-							<img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg">
-						{% endif %}
-
-					</p>
-				</div>
+	{% if project.languages.html or project.ruby or project.languages.css or project.languages.javascript or project.python or project.languages.applescript or project.languages.apache %}
+		<div class="card">
+			<div class="card-block">
+				<h2 class="card-title">Badges</h2>
+				<p class="card-text">
+					{% if project.status %}
+						<img src="https://travis-ci.org/{% if project.github_username %}{{ project.github_username }}{% else %}michael-bateman{% endif %}/{{ project.github }}.svg?branch=master">
+					{% endif %}
+					{% if project.languages.html %}
+						<img src="https://img.shields.io/badge/Language-HTML-e44b23.svg">
+					{% endif %}
+					{% if project.ruby %}
+						<img src="https://img.shields.io/badge/Language-Ruby-701516.svg">
+					{% endif %}
+					{% if project.languages.css %}
+						<img src="https://img.shields.io/badge/Language-CSS-563d7c.svg">
+					{% endif %}
+					{% if project.languages.javascript %}
+						<img src="https://img.shields.io/badge/Language-JavaScript-f1e05a.svg">
+					{% endif %}
+					{% if project.python %}
+						<img src="https://img.shields.io/badge/Language-Python-3572A5.svg">
+					{% endif %}
+					{% if project.languages.applescript %}
+						<img src="https://img.shields.io/badge/Language-AppleScript-101F1F.svg">
+					{% endif %}
+					{% if project.languages.apache %}
+						<img src="https://img.shields.io/badge/Language-ApacheConf-lightgrey.svg">
+					{% endif %}
+					{% if project.license == "mit" %}
+						<img src="https://img.shields.io/badge/License-MIT-blue.svg">
+					{% endif %}
+					{% if project.license == "apache" %}
+						<img src="https://img.shields.io/badge/License-Apache-blue.svg">
+					{% endif %}
+					{% if project.license == "gpl" %}
+						<img src="https://img.shields.io/badge/License-GPL--3.0-blue.svg">
+					{% endif %}
+				</p>
 			</div>
-			<br />
-		{% endif %}
+		</div>
+		<br />
 	{% endif %}
 	<!--
 	{% if project.github %}
