@@ -8,6 +8,7 @@
 #   projects link (link)
 #   status (status)[bool]
 #   ruby (ruby)[bool]
+#   python (python) [bool]
 #   languages:
 #     html
 #     css
@@ -23,7 +24,7 @@ michaelbateman.ca:
   website: http://michaelbateman.ca
   github: michaelbateman.ca
   link: personal-website
-  status: False
+  status: True
   ruby: True
   languages:
     html: True
@@ -40,7 +41,13 @@ beta.michaelbateman.ca:
   github: beta.michaelbateman.ca
   link: beta-website
   status: False
-  ruby: False
+  ruby: True
+  languages:
+    html: True
+    css: True
+    javascript: True
+    apache: True
+  license: gpl
 
 blog.michaelbateman.ca:
   name: Blog
@@ -50,6 +57,11 @@ blog.michaelbateman.ca:
   link: blog
   status: True
   ruby: True
+  languages:
+    html: True
+    css: True
+    javascript: True
+    apache: True
 
 uccewb.github.io:
   name: Engineering Society website
@@ -68,6 +80,7 @@ pong:
   link: pong
   status: False
   ruby: False
+  python: True
 
 projects.michaelbateman.ca:
   name: Projects website
@@ -77,6 +90,12 @@ projects.michaelbateman.ca:
   link: projects-website
   status: True
   ruby: True
+  languages:
+    html: True
+    css: True
+    javascript: True
+    apache: True
+  license: gpl
 
 python-codingbat:
   name: Python Coding Bat
