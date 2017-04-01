@@ -1,22 +1,25 @@
-# Projects file
-# The following data can be entered:
-#   name (name)
-#   description (description)
-#   website of project (website)
-#   github repository name (github)
-#       github repository owner (github_username)
-#   projects link (link)
-#   status (status)[bool]
-#   ruby (ruby)[bool]
-#   python (python) [bool]
-#   languages:
-#     html
-#     css
-#     javascript
-#     python
-#     applescript
-#     apache
+#################
+# PROJECTS FILE #
+#################
 
+# What you need to enter:
+#   name: (name for the project)[string]
+#   description: (short description of the project)[string]
+#   website: (website of project - if there is one)[string]
+#   github: (GitHub repository name)[string]
+#   github_username: (If the project is under a org or a different user)[string]
+#   link: (Projects link)[string]
+#   status: (If there is TravisCI or no)[bool]
+#   ruby: (If the project uses Ruby)[bool]
+#   python: (If the project uses Python)[bool]
+#   languages: (All the other languages)[bool]
+#     html:
+#     css:
+#     javascript:
+#     python:
+#     applescript:
+#     apache:
+#   license: (The type of license)[string - gpl, apache, mit]
 
 michaelbateman.ca:
   name: Personal website
