@@ -21,6 +21,11 @@
             Python
           </li>
         {% endif %}
+        {% if project.java %}
+          <li>
+            Java
+          </li>
+        {% endif %}
       	<br />
       	Most modern computers come with Git installed.  If you do not have it installed, you can download it at <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.
       	<br /><br />
@@ -32,7 +37,7 @@
           <b>Note</b> - To install Jekyll you must have already installed Ruby.  
         {% endif %}
         {% if project.python %}
-          Make sure you have Python downloaded on your machine.  Most modern Mac's come with Python pre-installed.  You can check to see if Python is installed by typing:
+          Make sure you have Python installed on your machine.  Most modern Mac's come with Python pre-installed.  You can check to see if Python is installed by typing:
           <br /><br />
           <code>
             $ python
@@ -48,6 +53,9 @@
           </code>
           <br /><br />
           Press <kbd><kbd>control</kbd> + <kbd>z</kbd></kbd> to exit the Python interpreter.
+        {% endif %}
+        {% if project.java %}
+          Make sure you have Java installed. Java does not usually come installed with your computer. To install it, head to <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>. Now, click on the Java only download, not the Net Beans one. Follow the prompts, to ensure that Java is fully installed.
         {% endif %}
         <br /><br />
     		<b>Note</b> - Do not type the <code>$</code> as it is a reminder that it is a command, to be entered on the command line.
@@ -90,6 +98,33 @@
             $ python &lt;file_name&gt;
           </code>
         {% endif %}
+        {% if project.java %}
+          Navigate to the project directory by using the <code>cd</code> command. Type:
+          <br /><br />
+          <code>
+            $ cd {{ project.github }}
+          </code>
+          <br /><br />
+          Since this project was made with Eclipse, you will need to <code>cd</code> into the <code>src</code> direcory. Enter:
+          <br /><br />
+          <code>
+            $ cd src/
+          </code>
+          <br /><br />
+          Now, we type the following to compile the code:
+          <br /><br />
+          <code>
+            $ javac {{ project.languages.java }}.java
+          </code>
+          <br /><br />
+          Then run the code by typing:
+          <br /><br />
+          <code>
+            $ java {{ project.languages.java }}
+          </code>
+        {% endif %}
+        <br /><br />
+        Now, the program should work!
 	    </p>
     </div>
   </div>

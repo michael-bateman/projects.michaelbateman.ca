@@ -12,6 +12,7 @@
 #   status: (If there is TravisCI or no)[bool]
 #   ruby: (If the project uses Ruby)[bool]
 #   python: (If the project uses Python)[bool]
+#   java: (If the project uses Java)[bool]
 #   languages: (All the other languages)[bool]
 #     html:
 #     css:
@@ -19,6 +20,7 @@
 #     python:
 #     applescript:
 #     apache:
+#     java: (Name of main file)[string]
 #   license: (The type of license)[string - gpl, apache, mit]
 
 michaelbateman.ca:
@@ -35,6 +37,16 @@ michaelbateman.ca:
     javascript: True
     apache: True
   license: gpl
+
+Math-Calculator:
+  name: Math Calculator
+  description: My first java project which is a simple math calculator for some simple formulas.
+  github: Math-Calculator
+  link: math-calculator
+  status: False
+  java: True
+  languages:
+    java: Calculator
 
 
 beta.michaelbateman.ca:

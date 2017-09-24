@@ -27,7 +27,7 @@
 		</div>
 		<br />
 	{% endif %}
-	{% if project.languages.html or project.ruby or project.languages.css or project.languages.javascript or project.python or project.languages.applescript or project.languages.apache %}
+	{% if project.languages.html or project.java or project.ruby or project.languages.css or project.languages.javascript or project.python or project.languages.applescript or project.languages.apache %}
 		<div class="card">
 			<div class="card-block">
 				<h2 class="card-title">Badges</h2>
@@ -55,6 +55,9 @@
 					{% endif %}
 					{% if project.languages.apache %}
 						<img src="https://img.shields.io/badge/Language-ApacheConf-lightgrey.svg">
+					{% endif %}
+					{% if project.java %}
+						<img src="https://img.shields.io/badge/Language-Java-b07219.svg">
 					{% endif %}
 					{% if project.license == "mit" %}
 						<img src="https://img.shields.io/badge/License-MIT-blue.svg">
