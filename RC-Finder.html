@@ -1,0 +1,35 @@
+---
+permalink: /hosted-projects/RC-Finder/
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Old RegattaCentral Website Finder</title>
+    </head>
+    <body>
+        <h1>Old Regatta Central Website Link</h1>
+        <p>This tool will help you see the old version of the Regatta Central website. You'll need the <b>NEW</b> link of the regatta</p>
+        <p id="old">
+            New Website Link - <i>search for your regatta and copy the link (the new regatta link)</i>:
+            <br />
+            <input type="text" id="oldlink"><br>
+            <button class="btn btn-primary" onclick="calculateNew()">Find</button>
+            <p id="newlinkgenerate">Old Link: <i>Enter the new link first</i></p>
+            <i>Not working? <a href="mailto:info@michaelbateman.ca">Contact me</a> for help </i>
+        </p>
+
+    <script>
+        function calculateNew() {
+            var old = document.getElementById("oldlink").value;
+            var splitword = old.split("/");
+
+            var end = splitword[splitword.length-1];
+            var regattanumber = end.substring(11,16);
+
+            document.getElementById("newlinkgenerate").innerHTML = "Old Link: <a href='https://www.regattacentral.com/regatta/entries/?job_id=" + regattanumber+ "'>https://www.regattacentral.com/regatta/entries/?job_id=" + regattanumber + "</a>";
+        }
+    </script>
+
+    </body>
+</html>
