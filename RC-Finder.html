@@ -1,35 +1,41 @@
 ---
+layout: default
 permalink: /hosted-projects/RC-Finder/
+title: Old RegattaCentral Website Finder
 ---
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Old RegattaCentral Website Finder</title>
-    </head>
-    <body>
-        <h1>Old Regatta Central Website Link</h1>
-        <p>This tool will help you see the old version of the Regatta Central website. You'll need the <b>NEW</b> link of the regatta</p>
-        <p id="old">
-            New Website Link - <i>search for your regatta and copy the link (the new regatta link)</i>:
-            <br />
-            <input type="text" id="oldlink"><br>
-            <button class="btn btn-primary" onclick="calculateNew()">Find</button>
-            <p id="newlinkgenerate">Old Link: <i>Enter the new link first</i></p>
-            <i>Not working? <a href="mailto:info@michaelbateman.ca">Contact me</a> for help </i>
-        </p>
+<div id="alert"></div>
+<h1>Old Regatta Central Website Finder</h1>
+<p>This tool will help you see the old version of the Regatta Central website. You'll need the <b>NEW</b> link of the regatta</p>
+<p>
+   <b>Note: </b> Your link should have an ID that is a number
+   <br />
+   <i>Example Link: https://www.regattacentral.com/ng/regatta?id=5812</i> 
+</p>
+<p id="old">
+    New Website Link - <i>search for your regatta and copy the link (the new regatta link)</i>:
+    <br /><br />
+    <input type="text" class="form-control" id="oldlink" style="width: 500px">
+    <br />
+    <button type="button" class="btn btn-secondary" onclick="calculateNew()">Find</button>
+    <br />
+    <p id="newlinkgenerate">Old Link: <i>Enter the new link first</i></p>
+    Not working? <a href="mailto:info@michaelbateman.ca">Contact me</a> for help or <a href="mailto:helpdesk@michaelbateman.ca?subject=Issue with RegattaCentral Link Finder">helpdesk@michaelbateman.ca</a>.
+</p>
 
-    <script>
-        function calculateNew() {
-            var old = document.getElementById("oldlink").value;
-            var splitword = old.split("/");
+<script>
+    function calculateNew() {
+        var old = document.getElementById("oldlink").value;
+        var splitword = old.split("/");
 
-            var end = splitword[splitword.length-1];
-            var regattanumber = end.substring(11,16);
+        var end = splitword[splitword.length-1];
+        var regattanumber = end.substring(11,16);
 
+        if (regattanumber > 0) {
             document.getElementById("newlinkgenerate").innerHTML = "Old Link: <a href='https://www.regattacentral.com/regatta/entries/?job_id=" + regattanumber+ "'>https://www.regattacentral.com/regatta/entries/?job_id=" + regattanumber + "</a>";
+        } else {
+            document.getElementById("alert").innerHTML = "<div class=\"alert alert-warning\" role=\"alert\">\n" +
+                    "            <strong><b>Invalid Link!</b></strong> Please go back to <a href=\"https://regattacentral.com\">https://regattacentral.com</a> and search again\n" +
+                    "        </div>";
         }
-    </script>
-
-    </body>
-</html>
+    }
+</script>

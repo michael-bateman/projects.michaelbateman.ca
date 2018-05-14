@@ -25,3 +25,6 @@ code {
 .h1-center {
 	text-align: center;
 }
+.form-control {
+	font-family: 'Ubuntu', sans-serif;
+}
